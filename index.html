@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" href="C:\Users\yleelaarunkumar\Desktop\css\style1.css">
+</head>
+<body>
+
+        <script>
+                function validate()
+                {
+                    var Email=document.getElementById("Email");
+                    var Password=document.getElementById("Password");
+                    if(Email.value=="arunn@gmail.in"&&Password.value=="19162")
+                    {
+                        alert("You are  being directed to new html page");
+                        return true;
+                    }
+                    else
+                    {
+                        alert("Check your password or username")
+                        return false;
+                    }
+                
+        
+                }
+               
+        
+            </script>
+           
+    
+    <div class="Login-page">
+    <div class="form">
+        
+        <form style="text-align: center;" onsubmit="return validate();" action="success.html">
+            <h1>Login Page</h1>
+            <br>Email-Address<br>
+            <input type="text" id="Email">
+            <br>Password<br>
+            <input type="text" id="Password">
+            <button type="submit"><B>Login</B></button></form>
+        </form>
+    </div>
+    </div>
+
+           
+
+   
+   
+
+    
+</body>
+</html>
